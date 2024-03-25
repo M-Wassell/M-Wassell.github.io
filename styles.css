@@ -1,0 +1,124 @@
+.header{
+    text-align: center;
+    font-size:x-large;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+.navBar ul{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navBar li{
+    float: left;
+}
+
+.navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar li a:hover{
+background-color: #111;
+}
+
+.profileImage{
+    max-width: 100%;
+    max-height: 100;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    
+    
+}
+
+.columnLeft{
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;  
+    text-align: center;
+}
+.columnRight{
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border:black 3px solid;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;   
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:768px) {
+    .row{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .columnLeft,
+    .columnRight{
+        width: 100%;
+    }
+}
+
+
+
+.aboutMe{
+    text-align: center;
+}
+
+.CV-Button{
+    border-style: none;
+    background: none;
+    padding: 0;
+}
+
+.CV-Button svg{
+    transition: filter 0.3s ease;
+}
+
+.CV-Button:hover svg{
+    filter:brightness(1.2)
+}
+
+.projects_Button{
+    border-style: none;
+    background: none;
+    padding: 0;
+}
+
+.projects_Button svg{
+    transition: filter 0.3 ease;
+}
+
+.projects_Button:hover svg{
+    filter: brightness(1.2);
+}
+
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #111;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
