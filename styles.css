@@ -1,3 +1,12 @@
+ body{
+    /* background-image: url('BackGround_1.0.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; */
+
+        background-image: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+} 
+
 .header{
     text-align: center;
     font-size:x-large;
