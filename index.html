@@ -33,7 +33,18 @@
         <li class="right"><a href="./cv/Michael_Wassell_03_03_2024.docx.pdf" target="_blank">Resume</a></li>
         <li class="right"><a href="./Projects/projects.html" target="_blank">Projects</a></li>
         <li class="right" style="color: white;"><a>Skills</a></li> <!-- not complete -->
-        <li class="right" style="color: white;"><a>Contact</a></li> <!-- not complete -->
+        
+        <li class="popupButtonContainer" style="color: white;">
+          
+          <button onclick="openContact()">Contact</button>
+          
+          <div id="popupInfo">
+            <input type="text" id="myText" value="mike1791.mw@googlemail.com"></type>
+            <button onclick="copyText()">Copy</button>
+            <button class=”spu-close-popup”></button>">Close</button>
+          </div>
+          
+        </li> 
       </div>
 
 
@@ -88,9 +99,11 @@
 
 
   </div> -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="../M-Wassell.github.io/logic.js"></script>
 </body>
 
 </html>
