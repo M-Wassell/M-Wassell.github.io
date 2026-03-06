@@ -1,4 +1,4 @@
- * {
+ /* * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -6,7 +6,6 @@
 
  body {
      margin: 0;
-     /* padding: 0; */
      padding: 5px;
      width: 100%;
      background-color: rgb(135, 25, 25);
@@ -14,7 +13,6 @@
  }
 
  .navBar ul {
-     /* font-family: 'Courier New', Courier, monospace; */
      list-style-type: none;
      margin: 5px;
      padding: 0;
@@ -60,4 +58,4 @@
  .hr{
     height: 2px;
  }
-
+ */

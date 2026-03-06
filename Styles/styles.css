@@ -8,7 +8,8 @@
      margin: 0;
      padding: 5px;
      width: 100%;
-     background-image: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+     background-color: grey;
+     background-image: linear-gradient(to top, #dce0e1, #6d7071, #575d5f);
  }
 
  /* .header {
@@ -20,7 +21,7 @@
  } */
 
 
- .navBar ul {
+ /* .navBar ul {
      font-family: 'Courier New', Courier, monospace;
      list-style-type: none;
      margin: 5px;
@@ -28,8 +29,9 @@
      overflow: hidden;
      font-size: x-large;
      font-weight: 500;
-
  }
+
+
 
  .navBar li {
      float: left;
@@ -49,7 +51,7 @@
 
  .navMoRight {
      float: right;
- }
+ } */
 
  .profileImage {
      max-width: 100%;
@@ -73,7 +75,7 @@
      padding: 10px;
      text-align: center;
      box-sizing: border-box;
-     color: white;
+     color: black;
      font-family: 'Courier New', Courier, monospace;
      font-size: 3em;
  }
@@ -121,6 +123,7 @@
      color: #333;
      margin-bottom: 15px;
  }
+
 
  /* @media screen and (max-width:600px) {
 
