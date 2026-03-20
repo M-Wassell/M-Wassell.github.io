@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../assests/css/about.css">
   <title>Projects</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="80">
+<body data-bs-spy="scroll" data-bs-target="#case-study-nav" data-bs-offset="80">
   <header class="header">
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <ul class="topbar">
@@ -108,15 +108,18 @@
   
     <div class="row">
       <nav class="col-md-3 col-lg-2 about-sidebar d-none d-md-block">
-        <h5>About</h5>
-        <nav id="about-nav">
-          <a class="about-nav-link" href="#profile-summary">Intoduction</a>
-          <a class="about-nav-link" href="#current-role">Current Role</a>
-          <a class="about-nav-link" href="#tech-stack">Tech Stack</a>
-          <a class="about-nav-link" href="#how-i-work">How I Work</a>
-          <a class="about-nav-link" href="#previous-experience">Previous Experience</a>
-          <a class="about-nav-link" href="#achievements">Achievements</a>
-          <a class="about-nav-link" href="#career-goals">Career Goals</a>
+        <h5>Case Study</h5>
+        <nav id="case-study-nav">
+          <a class="about-nav-link" href="#project-overview">Overview</a>
+          <a class="about-nav-link" href="#problem">Problem</a>
+          <a class="about-nav-link" href="#solution">Solution</a>
+          <a class="about-nav-link" href="#features">Key Features</a>
+          <a class="about-nav-link" href="#architecture">Architecture</a>
+          <a class="about-nav-link" href="#validation">Validation</a>
+          <a class="about-nav-link" href="#technologies">Technologies</a>
+          <a class="about-nav-link" href="#challenges">Challenges</a>
+          <a class="about-nav-link" href="#impact">Impact</a>
+          <a class="about-nav-link" href="#learning">What I Learned</a>
         </nav>
       </nav>
   
@@ -124,43 +127,135 @@
   
         <div class="profile-summary">
   
-          <h1 class="mb-5">Projects</h1>
-  
-          <section id="introduction" class="content-block">
-            <h2>Profile Summary</h2>
-            
-          </section>
-  
-          <section id="current-role" class="content-block">
-            <h2>Current Role</h2>
-            
-          </section>
-  
-          <section id="tech-stack" class="content-block">
-            <h2>Tech Stack</h2>
-            
-          </section>
-  
-          <section id="how-i-work" class="content-block">
-            <h2>How I Work</h2>
-            
-          </section>
-  
-          <section id="previous-experience" class="content-block">
-            <h2>Previous Experience(Snippet)</h2>
-  
-            
-          </section>
-  
-          <section id="achievements" class="content-block">
-            <h2>Achievements</h2>
-            
-          </section>
-  
-          <section id="career-goals" class="content-block">
-            <h2>Career Goals</h2>
-            
-          </section>
+          <div class="profile-summary">
+          
+            <h1 class="mb-5">NHS Acronym Management System</h1>
+          
+            <section id="project-overview" class="content-block">
+              <h2>Project Overview</h2>
+              <p>
+                A .NET 8 MVC web application developed to help NHS staff search, manage,
+                and understand service acronyms used across different departments.
+              </p>
+            </section>
+          
+            <section id="problem" class="content-block">
+              <h2>The Problem</h2>
+              <p>
+                The NHS uses a large number of acronyms across different departments and services.
+                Staff working across clinical areas may encounter unfamiliar acronyms, which can
+                slow down communication and create confusion.
+              </p>
+              <p>
+                There was no centralised system allowing staff to quickly search or contribute
+                commonly used acronyms.
+              </p>
+            </section>
+          
+            <section id="solution" class="content-block">
+              <h2>The Solution</h2>
+              <p>
+                I developed an internal web application using ASP.NET .NET 8 MVC that allows NHS staff to:
+              </p>
+              <ul>
+                <li>Search for acronyms used across services</li>
+                <li>Submit new acronyms for inclusion</li>
+                <li>View a shared repository of commonly used terms</li>
+              </ul>
+              <p>
+                The system validates user input and ensures appropriate content is submitted
+                before storing entries in a shared database accessible by staff.
+              </p>
+            </section>
+          
+            <section id="features" class="content-block">
+              <h2>Key Features</h2>
+              <ul>
+                <li>Acronym search functionality accessible to all staff</li>
+                <li>Secure submission form for new acronym entries</li>
+                <li>Client-side validation using JavaScript</li>
+                <li>Server-side validation using ASP.NET model validation</li>
+                <li>SQL database storage for acronym records</li>
+                <li>Profanity filtering system to prevent inappropriate submissions</li>
+              </ul>
+            </section>
+          
+            <section id="architecture" class="content-block">
+              <h2>Technical Architecture</h2>
+              <p>The application follows a standard MVC architecture:</p>
+              <ul>
+                <li><strong>Model</strong> – Handles acronym data and validation rules</li>
+                <li><strong>View</strong> – Razor views used to display search results and input forms</li>
+                <li><strong>Controller</strong> – Manages user input, validation, and database interaction</li>
+              </ul>
+              <p>
+                Data is stored in a SQL Server database, with validation layers implemented
+                to ensure both security and data integrity.
+              </p>
+            </section>
+          
+            <section id="validation" class="content-block">
+              <h2>Input Validation & Data Integrity</h2>
+              <p>To ensure the system remained appropriate for a professional environment, I implemented:</p>
+              <ul>
+                <li>Client-side validation using JavaScript</li>
+                <li>Server-side validation using ASP.NET model validation</li>
+                <li>A profanity filtering system</li>
+              </ul>
+              <p>
+                The profanity filter checks user input against a curated list of approximately
+                800 restricted words stored in a SQL database, preventing inappropriate submissions.
+              </p>
+            </section>
+          
+            <section id="technologies" class="content-block">
+              <h2>Technologies Used</h2>
+              <ul>
+                <li>.NET 8</li>
+                <li>ASP.NET MVC</li>
+                <li>C#</li>
+                <li>SQL Server</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+                <li>Visual Studio 2022</li>
+              </ul>
+            </section>
+          
+            <section id="challenges" class="content-block">
+              <h2>Challenges</h2>
+              <p>
+                One of the main challenges was ensuring user-generated content remained appropriate
+                while still allowing staff to contribute new entries.
+              </p>
+              <p>
+                To address this, I implemented both client-side and server-side validation along with
+                a database-driven profanity filter.
+              </p>
+            </section>
+          
+            <section id="impact" class="content-block">
+              <h2>Impact</h2>
+              <p>
+                The system provides staff with a centralised resource for understanding service
+                acronyms used across the organisation.
+              </p>
+              <p>
+                By allowing staff to contribute new entries, the application ensures the acronym
+                database can grow over time as new services and terminology are introduced.
+              </p>
+            </section>
+          
+            <section id="learning" class="content-block">
+              <h2>What I Learned</h2>
+              <ul>
+                <li>Building production applications using .NET 8 MVC</li>
+                <li>Implementing secure input validation</li>
+                <li>Designing database-driven validation systems</li>
+                <li>Developing software for real operational users</li>
+              </ul>
+            </section>
+          
+          </div>
   
   
   

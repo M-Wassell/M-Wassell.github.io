@@ -241,7 +241,7 @@ body {
 }
 
 .sidebar .dropdown-container.active .dropdown-menu {
-    max-height: 150px;
+    max-height: none;
 }
 
 .sidebar .dropdown-menu li a {
