@@ -1,8 +1,3 @@
- /* *,
- *::before,
- *::after {
-     box-sizing: border-box;
- } */
 
  body {
      margin: 0;
@@ -11,47 +6,6 @@
      background-color: grey;
      background-image: linear-gradient(to top, #dce0e1, #6d7071, #575d5f);
  }
-
- /* .header {
-     text-align: center;
-     font-size: x-large;
-     font-style: oblique;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     padding: 15px;
- } */
-
-
- /* .navBar ul {
-     font-family: 'Courier New', Courier, monospace;
-     list-style-type: none;
-     margin: 5px;
-     padding: 0;
-     overflow: hidden;
-     font-size: x-large;
-     font-weight: 500;
- }
-
-
-
- .navBar li {
-     float: left;
- }
-
- .navBar li a {
-     display: block;
-     color: white;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
- }
-
- .navBar li a:hover {
-     background-color: #111;
- }
-
- .navMoRight {
-     float: right;
- } */
 
  .profileImage {
      max-width: 100%;
@@ -123,12 +77,3 @@
      color: #333;
      margin-bottom: 15px;
  }
-
-
- /* @media screen and (max-width:600px) {
-
-    .navBar ul {
-        float: none;
-        width: 100%;
-    }
-} */
